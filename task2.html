@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/markdown.css">
     <title>overview</title>
@@ -11,47 +13,69 @@
     <body>
         <article class="markdown-body">
             <h1>
-                <a id="user-content-task-2-read-the-text-and-decide-if-the-following-statements-are-true-t-or--false-f" class="anchor" href="#task-2-read-the-text-and-decide-if-the-following-statements-are-true-t-or--false-f" aria-hidden="true">
-                    <span aria-hidden="true" class="octicon octicon-link"></span>
-                </a>Task 2. Read the text and decide if the following statements are true (T) or  false (F).
+                Task 2. Read the text and decide if the following statements are true (T) or  false (F).
             </h1>
-            <p>Click “Check” to check your answer and see the right one.</p>
             <blockquote>
                 <p>It’s no secret that technology has become more central in our everyday lives than ever before. It helps us in every aspect of our lives, from health and fitness to creativity and social communication. But how can students benefit from today’s technological advancements in the four skill areas to make their learning as well rounded as possible? With the rise of iPads, tablets and e-readers like the Kindle, we’ve come accustomed to a more interactive reading experience, which is a wonderful feature for English learners. Functions like click-to-define, vocabulary builders, and downloading whole texts at the touch of a button are all beneficial to a learner looking for a fun and effective way to improve their reading and writing in particular. They can help to expand your vocabulary and expose you to different sentence structures. One of the most well-known technological advancements for writing is the unassuming word processor. Simple tools such as a dictionary and a thesaurus help writers expand their vocabulary, while spelling- and grammar-checkers are helpful to find and correct errors. Moving forward to the internet age and online forums are a widely used channel for learners to communicate and learn from one another using the written word. This is also a great alternative for those who don’t have the opportunity to converse with a native speaker face to face.</p>
             </blockquote>
+            <p>Click “Check” to check your answer and see the right one.</p>
             <h4>
-                <a id="user-content-1-technology-helps-us-in-every-aspect-of-our-lives" class="anchor" href="#1-technology-helps-us-in-every-aspect-of-our-lives" aria-hidden="true">
-                    <span aria-hidden="true" class="octicon octicon-link"></span>
-                </a>1. Technology helps us in every aspect of our lives.
+                1. Technology helps us in every aspect of our lives.
             </h4>
-            <p>Answer:</p>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">True
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">False
+            </label>
+            <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
             <h4>
-                <a id="user-content-2--with-the-rise-of-ipads-tablets-and-e-readers-like-the-kindle-weve-not-been-used-to-a-more-interactive-reading-experience" class="anchor" href="#2--with-the-rise-of-ipads-tablets-and-e-readers-like-the-kindle-weve-not-been-used-to-a-more-interactive-reading-experience" aria-hidden="true">
-                    <span aria-hidden="true" class="octicon octicon-link"></span>
-                </a>2.  With the rise of iPads, tablets and e-readers like the Kindle, we’ve not been used to a more interactive reading experience.
+                2.  With the rise of iPads, tablets and e-readers like the Kindle, we’ve not been used to a more interactive reading experience.
             </h4>
-            <p>Answer:</p>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">True
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">False
+            </label>
+            <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
             <h4>
-                <a id="user-content-3-new-devices-like-ipads-tablets-and-e-readers-expose-you-to-different-sentence-structures" class="anchor" href="#3-new-devices-like-ipads-tablets-and-e-readers-expose-you-to-different-sentence-structures" aria-hidden="true">
-                    <span aria-hidden="true" class="octicon octicon-link"></span>
-                </a>3. New devices like Ipads, tablets and e-readers expose you to different sentence structures
+               3. New devices like Ipads, tablets and e-readers expose you to different sentence structures
             </h4>
-            <p>Answer:</p>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">True
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">False
+            </label>
+            <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
             <h4>
-                <a id="user-content-4-the-unassuming-word-processor-is-one-of-the-most-famous-technological-advancements-for-writing" class="anchor" href="#4-the-unassuming-word-processor-is-one-of-the-most-famous-technological-advancements-for-writing" aria-hidden="true">
-                    <span aria-hidden="true" class="octicon octicon-link"></span>
-                </a>4. The unassuming word processor is one of the most famous technological advancements for writing.
+                4. The unassuming word processor is one of the most famous technological advancements for writing.
             </h4>
-            <p>Answer:</p>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">True
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">False
+            </label>
+            <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
             <h4>
-                <a id="user-content-5-online-forums-are-a-narrowly-used-channel-for-learners-to-communicate" class="anchor" href="#5-online-forums-are-a-narrowly-used-channel-for-learners-to-communicate" aria-hidden="true">
-                    <span aria-hidden="true" class="octicon octicon-link"></span>
-                </a>5. Online forums are a narrowly used channel for learners to communicate.
+                5. Online forums are a narrowly used channel for learners to communicate.
             </h4>
-            <p>Answer:</p>
-            <blockquote>
-                <p>Next</p>
-            </blockquote>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">True
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">False
+            </label>
+            <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
+            <br>
+            <br>
+            <br>
+            <button class="btn btn-primary btn-lg" type="button" onClick="check_all_question()">Submit all answers</button>
+            <a class="btn btn-primary btn-lg" href="task3.html" onClick="check_is_stored()" role="button">Go To Task 3</a>
+            </article>
         </article>
+        
     </body>
 </html>

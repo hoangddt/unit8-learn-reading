@@ -1,0 +1,17 @@
+.timer-wrapper  
+{ 
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	width: 100px;
+	height: 100px;
+	background:#0D5B85; 
+	font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight:400; 
+	padding-top:5px; 
+	text-align:center; 
+}
+
+#message    { color:#FFF; font-size:14px; margin-bottom:10px; }
+
+#timer     { color:#FFF; font-size:20px; margin-bottom:20px; }

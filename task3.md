@@ -35,10 +35,5 @@ B.  spelling and grammar-checkers.
 C.  thesaurus.  
 Answer:
 
-#### 6. What did she wish for the things to be different?
-A. She wished that her parents could understand her.  
-B. She wished that her parents would set a later time for her.  
-C. She wished that she hadn't attended that birthday party.  
-Answer:
 
 > Next
