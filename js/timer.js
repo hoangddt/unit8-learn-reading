@@ -1,4 +1,5 @@
 var bigTime = 300; // time in seconds
+// override time in document.ready or before call startTimer()
 var mode = "normal";
 var animation = "fadeToBlack";
 

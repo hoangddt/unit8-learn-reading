@@ -108,7 +108,7 @@ function check_is_stored() {
 function store_result() {
   if (typeof(Storage) !== "undefined") {
     // Store
-    localStorage.setItem("task2", [NumberOfCorrectAnswer, NumberOfQuestion]);
+    localStorage.setItem("task1", [NumberOfCorrectAnswer, NumberOfQuestion]);
     isStored = true;
   }
 }

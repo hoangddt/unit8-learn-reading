@@ -12,10 +12,14 @@ function check_question(question_number) {
     IsSubmitted[question_number-1] = true;
   }
   var eleId = "#" + "question-" + question_number;
+  var inputs = eleId + " input";
   var inputEle = eleId + " input[type=radio]:checked";
-  console.log(inputEle);
-  var answer = $(inputEle).val().trim();
-  console.log(inputEle, " Answer: ", answer);
+  var answer = null;
+  try {
+    answer = $(inputEle).val().trim();
+  } catch (err) {
+    console.log("Error: ", err.message);
+  }
 
   result = AnswerKey[question_number-1]
   answerMsg = "The answer is: " + result;
@@ -38,7 +42,7 @@ function check_question(question_number) {
     }).appendTo(eleId);
   }
 
-  $(inputEle).attr('disabled', 'disabled');
+  $(inputs).attr('disabled', 'disabled');
   $(eleId + " button").attr('disabled', 'disabled');
 }
 
@@ -93,6 +97,8 @@ function popupOpenClose(popup) {
 
 $(document).ready(function () {
   timeOutCallback = check_all_question;
+  // set Tomer is 10 minnutes
+  bigTime = 600;
   startTimer();
 });
 
@@ -109,7 +115,7 @@ function check_is_stored() {
 function store_result() {
   if (typeof(Storage) !== "undefined") {
     // Store
-    localStorage.setItem("task2", [NumberOfCorrectAnswer, NumberOfQuestion]);
+    localStorage.setItem("task3", [NumberOfCorrectAnswer, NumberOfQuestion]);
     isStored = true;
   }
 }
