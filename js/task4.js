@@ -5,6 +5,13 @@ var AnswerKey = [
   'Teachers can use computers inside classroom',
   'We can use cell phones to access the internet anywhere'
 ];
+var hint = [
+  'Student',
+  'Teachers',
+  'Cell phones',
+  'Teachers',
+  'We'
+]
 var isStored = false;
 var IsSubmitted = [false, false, false, false, false];
 var NumberOfQuestion = AnswerKey.length;
@@ -45,6 +52,18 @@ function check_question(question_number) {
 
   $(inputEle).attr('disabled', 'disabled');
   $(eleId + " button").attr('disabled', 'disabled');
+}
+
+function show_hint(question_number) {
+  var eleId = "#" + "question-" + question_number;
+  var inputEle = eleId + " .form-group";
+  var button = $('#hint' + question_number);
+  button.hide();
+  var firstWord = hint[question_number -1];
+  $('<p></p>', {
+    text: "Hint: First word is: " + firstWord,
+    class: 'help-block'
+  }).prependTo(inputEle);
 }
 
 function check_all_question() {
