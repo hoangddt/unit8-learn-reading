@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/markdown.css">
-    <title>overview</title>
+    <link rel="stylesheet" href="css/timer.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="js/task3.js"></script>
+    <title>Task 3</title>
   </head>
   <body>
     <article class="markdown-body">
@@ -15,67 +19,90 @@
 <blockquote>
 <p>It’s no secret that technology has become more central in our everyday lives than ever before. It helps us in every aspect of our lives, from health and fitness to creativity and social communication. But how can students benefit from today’s technological advancements in the four skill areas to make their learning as well rounded as possible? With the rise of iPads, tablets and e-readers like the Kindle, we’ve come accustomed to a more interactive reading experience, which is a wonderful feature for English learners. Functions like click-to-define, vocabulary builders, and downloading whole texts at the touch of a button are all beneficial to a learner looking for a fun and effective way to improve their reading and writing in particular. They can help to expand your vocabulary and expose you to different sentence structures. One of the most well-known technological advancements for writing is the unassuming word processor. Simple tools such as a dictionary and a thesaurus help writers expand their vocabulary, while spelling- and grammar-checkers are helpful to find and correct errors. Moving forward to the internet age and online forums are a widely used channel for learners to communicate and learn from one another using the written word. This is also a great alternative for those who don’t have the opportunity to converse with a native speaker face to face.</p>
 </blockquote>
+<div id="question-1">
 <h4>1.  What aspect does the technology help people?</h4>
   <div class="radio">
-    <label><input type="radio" name="optradio">A. all aspects of our lives.</label>
+    <label><input type="radio" value="A" name="q1">A. all aspects of our lives.</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optradio">B. health and fitness.</label>
+    <label><input type="radio" value="B" name="q1">B. health and fitness.</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optradio">C. social communication.</label>
+    <label><input type="radio" value="C" name="q1">C. social communication.</label>
   </div>
-  <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
+  <button class="btn btn-default btn-sm" type="button" onClick="check_question(1)">Check</button>
+</div>
+
+<div id="question-2">
 <h4>2.  What function of ipads, tablets and e-readers in reading skill?</h4>
   <div class="radio">
-    <label><input type="radio" name="optradio">A. expand your vocabulary.</label>
+    <label><input type="radio" value="A" name="q2">A. expand your vocabulary.</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optradio">B. expose you to different sentence structures.</label>
+    <label><input type="radio" value="B" name="q2">B. expose you to different sentence structures.</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optradio">C. Both A & B.</label>
+    <label><input type="radio" value="C" name="q2">C. Both A & B.</label>
   </div>
   <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
+</div>
+
+<div id="question-3">
 <h4>
 3.  What tools do help writers expand their vocabulary ?</h4>
   <div class="radio">
-    <label><input type="radio" name="optradio">A. grammar-checker.</label>
+    <label><input type="radio" value="A" name="q3">A. grammar-checker.</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optradio">B. dictionary and thesaurus.</label>
+    <label><input type="radio" value="B" name="q3">B. dictionary and thesaurus.</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optradio">C. Both A & B.</label>
+    <label><input type="radio" value="C" name="q3">C. Both A & B.</label>
   </div>
-  <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
+  <button class="btn btn-default btn-sm" type="button" onClick="check_question(3)">Check</button>
+</div>
+
+<div id="question-4">
 <h4>4. What is a wonderful feature for English learners by using these devices in reading?</h4>
   <div class="radio">
-    <label><input type="radio" name="optradio">A. accustomed to a more interactive reading experience.</label>
+    <label><input type="radio" value="A" name="q4">A. accustomed to a more interactive reading experience.</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optradio">B. giving learners the advantage of communication in real time conversations.</label>
+    <label><input type="radio" value="B" name="q4">B. giving learners the advantage of communication in real time conversations.</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optradio">C. help us advance in our English writing.</label>
+    <label><input type="radio" value="C" name="q4">C. help us advance in our English writing.</label>
   </div>
-  <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
+  <button class="btn btn-default btn-sm" type="button" onClick="check_question(4)">Check</button>
+</div>
+
+<div id="question-5">
 <h4>5. What tool does help learners to find and correct errors in writing ?</h4>
   <div class="radio">
-    <label><input type="radio" name="optradio">A. dictionary.</label>
+    <label><input type="radio" value="A" name="q5">A. dictionary.</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optradio">B. spelling and grammar-checkers.</label>
+    <label><input type="radio" value="B" name="q5">B. spelling and grammar-checkers.</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optradio">C. thesaurus.</label>
+    <label><input type="radio" value="C" name="q5">C. thesaurus.</label>
   </div>
-  <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
+  <button class="btn btn-default btn-sm" type="button" onClick="check_question(5)">Check</button>
+</div>
 <h4>
 <br>
 <br>
 <button class="btn btn-primary btn-lg" type="button" onClick="check_all_question()">Submit all answers</button>
 <a class="btn btn-primary btn-lg" href="task4.html" onClick="check_is_stored()" role="button">Go To Task 4</a>
+<div class="timer-wrapper">
+              <div id="message">Time Remainning</div>
+              <div id="timer">
+                <span id="minutes">10</span>
+                <span id="middle">:</span>
+                <span id="seconds">00</span>
+              </div>
+            </div>
 </article>
+<script type="text/javascript" src="js/timer.js"></script>
 </body>
 </html>
