@@ -42,11 +42,14 @@ $(document).ready(function () {
   t1 = localStorage.getItem('task1');
   t2 = localStorage.getItem('task2');
   t3 = localStorage.getItem('task3');
+  t4 = localStorage.getItem('task4');
   var t1Msg = "Task 1: " + t1[0] + "/" + t1[2] + " Score: " + Math.round(100*parseInt(t1[0])/parseInt(t1[2])) + "%";
   var t2Msg = "Task 2: " + t2[0] + "/" + t2[2] + " Score: " + Math.round(100*parseInt(t2[0])/parseInt(t2[2])) + "%";
   var t3Msg = "Task 3: " + t3[0] + "/" + t3[2] + " Score: " + Math.round(100*parseInt(t3[0])/parseInt(t3[2])) + "%";
-  
+  var t4Msg = "Task 4: " + t4[0] + "/" + t4[2] + " Score: " + Math.round(100*parseInt(t4[0])/parseInt(t4[2])) + "%";
+
   $('#result').append('<h5>' + t1Msg + '</h5>');
   $('#result').append('<h5>' + t2Msg + '</h5>');
   $('#result').append('<h5>' + t3Msg + '</h5>');
+  $('#result').append('<h5>' + t4Msg + '</h5>');
 });
