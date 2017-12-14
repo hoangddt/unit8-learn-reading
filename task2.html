@@ -8,8 +8,11 @@
     <script src="js/bootstrap.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/markdown.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <title>overview</title>
+    <link rel="stylesheet" href="css/timer.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="js/task2.js"></script>
+    <title>Task 2: True False</title>
     </head>
     <body>
         <article class="markdown-body">
@@ -20,63 +23,81 @@
                 <p>It’s no secret that technology has become more central in our everyday lives than ever before. It helps us in every aspect of our lives, from health and fitness to creativity and social communication. But how can students benefit from today’s technological advancements in the four skill areas to make their learning as well rounded as possible? With the rise of iPads, tablets and e-readers like the Kindle, we’ve come accustomed to a more interactive reading experience, which is a wonderful feature for English learners. Functions like click-to-define, vocabulary builders, and downloading whole texts at the touch of a button are all beneficial to a learner looking for a fun and effective way to improve their reading and writing in particular. They can help to expand your vocabulary and expose you to different sentence structures. One of the most well-known technological advancements for writing is the unassuming word processor. Simple tools such as a dictionary and a thesaurus help writers expand their vocabulary, while spelling- and grammar-checkers are helpful to find and correct errors. Moving forward to the internet age and online forums are a widely used channel for learners to communicate and learn from one another using the written word. This is also a great alternative for those who don’t have the opportunity to converse with a native speaker face to face.</p>
             </blockquote>
             <p>Click “Check” to check your answer and see the right one.</p>
-            <h4>
-                1. Technology helps us in every aspect of our lives.
-            </h4>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">True
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">False
-            </label>
-            <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
-            <h4>
-                2.  With the rise of iPads, tablets and e-readers like the Kindle, we’ve not been used to a more interactive reading experience.
-            </h4>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">True
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">False
-            </label>
-            <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
-            <h4>
-               3. New devices like Ipads, tablets and e-readers expose you to different sentence structures
-            </h4>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">True
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">False
-            </label>
-            <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
-            <h4>
-                4. The unassuming word processor is one of the most famous technological advancements for writing.
-            </h4>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">True
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">False
-            </label>
-            <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
-            <h4>
-                5. Online forums are a narrowly used channel for learners to communicate.
-            </h4>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">True
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optradio">False
-            </label>
-            <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
+            <div id="question-1">
+                <h4>
+                    1. Technology helps us in every aspect of our lives.
+                </h4>
+                <label class="radio-inline">
+                    <input type="radio" value="True" name="q1">True
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="False" name="q1">False
+                </label>
+                <button class="btn btn-default btn-sm" type="button" onClick="check_question(1)">Check</button>
+            </div>
+            <div id="question-2">
+                <h4>
+                    2.  With the rise of iPads, tablets and e-readers like the Kindle, we’ve not been used to a more interactive reading experience.
+                </h4>
+                <label class="radio-inline">
+                    <input type="radio" value="True" name="q2">True
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="False" name="q2">False
+                </label>
+                <button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button>
+            </div>
+            <div id="question-3">
+                <h4>
+                   3. New devices like Ipads, tablets and e-readers expose you to different sentence structures
+                </h4>
+                <label class="radio-inline">
+                    <input type="radio" value="True" name="q3">True
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="False" name="q3">False
+                </label>
+                <button class="btn btn-default btn-sm" type="button" onClick="check_question(3)">Check</button>
+            </div>
+            <div id="question-4">
+                <h4>
+                    4. The unassuming word processor is one of the most famous technological advancements for writing.
+                </h4>
+                <label class="radio-inline">
+                    <input type="radio" value="True" name="q4">True
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="False" name="q4">False
+                </label>
+                <button class="btn btn-default btn-sm" type="button" onClick="check_question(4)">Check</button>
+            </div>
+            <div id="question-5">
+                <h4>
+                    5. Online forums are a narrowly used channel for learners to communicate.
+                </h4>
+                <label class="radio-inline">
+                    <input type="radio" value="True" name="q5">True
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="False" name="q5">False
+                </label>
+                <button class="btn btn-default btn-sm" type="button" onClick="check_question(5)">Check</button>
+            </div>
             <br>
             <br>
             <br>
             <button class="btn btn-primary btn-lg" type="button" onClick="check_all_question()">Submit all answers</button>
             <a class="btn btn-primary btn-lg" href="task3.html" onClick="check_is_stored()" role="button">Go To Task 3</a>
             </article>
+            <div class="timer-wrapper">
+              <div id="message">Time Remainning</div>
+              <div id="timer">
+                <span id="minutes">10</span>
+                <span id="middle">:</span>
+                <span id="seconds">00</span>
+              </div>
+            </div>
         </article>
-        
+        <script type="text/javascript" src="js/timer.js"></script>
     </body>
 </html>

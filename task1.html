@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/markdown.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <title>overview</title>
+    <link rel="stylesheet" href="css/timer.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="js/task1.js"></script>
+    <!-- <link rel="stylesheet" href="css/theme.css"> -->
+    <title>Task1 Gap-fill</title>
     </head>
     <body>
         <article class="markdown-body">
+        <div class="timer-wrapper">
+          <div id="message">Time Remainning</div>
+          <div id="timer">
+            <span id="minutes">05</span>
+            <span id="middle">:</span>
+            <span id="seconds">00</span>
+          </div>
+        </div>
             <h1>
                 Task 1: Complete the sentences with the words from the box.
             </h1>
@@ -25,29 +37,43 @@
                     </tr>
                 </thead>
             </table>
-            <h4>
-                1. <input type="text" maxlength="1"></input>: a special activity or purpose of a person or thing.
-            </h4>
-            <p><button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button></p>
-            <h4>
-               2. <input type="text" maxlength="1"></input> : the process of helping something to make progress or succeed; the progress that is made.
-            </h4>
-            <p><button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button></p>
-            <h4>
-                3. <input type="text" maxlength="1"></input> : a machine or person that processes things.
-            </h4>
-            <p><button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button></p>
-            <h4>
-                4. <input type="text" maxlength="1"></input> : a thing that you can choose to do or have out of two or more possibilities.
-            </h4>
-            <p><button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button></p>
-            <h4>
-                5. <input type="text" maxlength="1"></input> : that involves people working together and having an influence on each other.
-            </h4>
-            <p><button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button></p>
+            <div id="question-1">
+                <h4>
+                    1. <input type="text"></input>: a special activity or purpose of a person or thing.
+                </h4>
+                <p><button class="btn btn-default btn-sm" type="button" onClick="check_question(1)">Check</button></p>
+            </div>
+            <div id="question-2">
+                <h4>
+                   2. <input type="text"></input> : the process of helping something to make progress or succeed; the progress that is made.
+                </h4>
+                <p><button class="btn btn-default btn-sm" type="button" onClick="check_question(2)">Check</button></p>
+            </div>
+
+            <div id="question-3">
+                <h4>
+                    3. <input type="text"></input> : a machine or person that processes things.
+                </h4>
+                <p><button class="btn btn-default btn-sm" type="button" onClick="check_question(3)">Check</button></p>
+            </div>
+
+            <div id="question-4">
+                <h4>
+                    4. <input type="text"></input> : a thing that you can choose to do or have out of two or more possibilities.
+                </h4>
+                <p><button class="btn btn-default btn-sm" type="button" onClick="check_question(4)">Check</button></p>
+            </div>
+
+            <div id="question-5">
+                <h4>
+                    5. <input type="text"></input> : that involves people working together and having an influence on each other.
+                </h4>
+                <p><button class="btn btn-default btn-sm" type="button" onClick="check_question(5)">Check</button></p>
+            </div>
 
             <button class="btn btn-primary btn-lg" type="button" onClick="check_all_question()">Submit all answers</button>
             <a class="btn btn-primary btn-lg" href="task2.html" onClick="check_is_stored()" role="button">Go To Task 2</a>
         </article>
+        <script type="text/javascript" src="js/timer.js"></script>
     </body>
 </html>
